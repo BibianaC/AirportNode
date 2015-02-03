@@ -1,0 +1,22 @@
+{
+  "name": "AirportNode",
+  "version": "1.0.0",
+  "description": "Learning Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node spec/ --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BibianaC/AirportNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BibianaC/AirportNode/issues"
+  },
+  "homepage": "https://github.com/BibianaC/AirportNode",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
