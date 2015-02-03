@@ -1,4 +1,4 @@
-var Airport = require('../src/airport')
+var Airport = require('../src/airport');
 
 describe('airport',function(){
 

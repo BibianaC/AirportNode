@@ -6,11 +6,16 @@ module.exports = function(grunt) {
         forceExit: true,
       },
       all: ['spec/']
+    },
+    jshint: {
+      files: ['Gruntfile.js','src/***.js','spec/**/*.js'],
+      options: {
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-jasmine-node');
-
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.registerTask('default', ['jasmine_node']);
-
+  grunt.registerTask('default', ['jshint']);
 };
