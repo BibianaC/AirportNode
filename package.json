@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/BibianaC/AirportNode",
   "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jasmine-node": "^0.2.1",
     "jasmine-node": "^1.14.5"
   }
 }
