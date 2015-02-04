@@ -3,4 +3,5 @@ function Airport(){
    this.capacity = 20;
 }
 
+
 module.exports = Airport;
