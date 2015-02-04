@@ -3,8 +3,13 @@ var Plane = require('../src/plane');
 
 describe('airport',function(){
 
-  var airport = new Airport();
-  var plane = new Plane();
+  var airport;
+  var plane; 
+
+  beforeEach(function(){
+    airport = new Airport();
+    plane = new Plane();
+  });
 
   it('should have zero planes initially',function(){
     expect(airport.planes).toBe(0);
@@ -25,6 +30,12 @@ describe('airport',function(){
       airport.accept(p);
     }
     expect(airport.accept(plane)).toBe("Airport is full");
+  });
+
+  it('should be able to release planes', function() {
+    airport.accept(plane);
+    airport.release(plane);
+    expect(airport.planes).toBe(0);
   });
 
 });

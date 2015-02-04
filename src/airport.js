@@ -14,5 +14,16 @@ Airport.prototype.accept = function(plane) {
   }
 };
 
+Airport.prototype.release = function(plane) {
+  for(var i = 0; i < this.planes; i++){
+    if (this.runaway[i] === plane) {
+      this.runaway.splice(i, 1);
+      plane.takeOff();
+      this.planes -= 1;
+      return plane;
+    }
+  }
+};
+
 
 module.exports = Airport;
