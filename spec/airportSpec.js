@@ -19,4 +19,12 @@ describe('airport',function(){
     expect(airport.planes).toBe(1);
   });
 
+  it('should not accept the plane if capacity is full',function(){
+    for(var i=0;i<20;i++){
+      p = new Plane();
+      airport.accept(p);
+    }
+    expect(airport.accept(plane)).toBe("Airport is full");
+  });
+
 });

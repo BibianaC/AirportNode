@@ -9,6 +9,8 @@ Airport.prototype.accept = function(plane) {
     this.runaway.push(plane);
     plane.land();
     this.planes += 1;
+  } else {
+    return "Airport is full";
   }
 };
 
